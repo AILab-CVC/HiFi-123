@@ -1,0 +1,11 @@
+python infer_rgnv.py \
+--device 'cuda' \
+--model_path '/path/to/stable-diffusion-2-depth' \
+--upscaler_path '/path/to/stable-diffusion-x4-upscaler' \
+--seed 42 \
+--target_prompt 'Side view of a parrot' \
+--stop_step 30  \
+--source_image_path './load/parrot.png' \
+--target_image_path './load/parrot_coarse.png' \
+--bg_path './load/bg2.png' \
+--out_path './output'
